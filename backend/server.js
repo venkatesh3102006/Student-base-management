@@ -26,8 +26,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: [
-    process.env.FRONTEND_URL, 
-    'http://localhost:3001', 
+    process.env.FRONTEND_URL,
     'https://newproject-six-tau.vercel.app',
     'https://student-base-management.vercel.app'
   ].filter(Boolean),
