@@ -1,3 +1,4 @@
+
 # 🎓 College Student Management Portal
 
 A full-stack web portal for managing student academic and disciplinary records securely, with role-based access for Admins and Faculty.
@@ -310,3 +311,6 @@ attachments[]
 ## 📝 License
 
 MIT — Free to use and modify.
+=======
+# Student-base-management
+
