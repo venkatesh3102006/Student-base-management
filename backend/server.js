@@ -24,14 +24,14 @@ const statsRoutes = require('./routes/stats');
 const app = express();
 
 // Middleware
+import cors from "cors";
+
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL,"http://localhost:3001",
-    'https://newproject-six-tau.vercel.app',
-    'https://student-base-management.vercel.app'
-  ].filter(Boolean),
-  credentials: true
-}));
+origin: "*",
+methods: ["GET","POST","PUT","DELETE","PATCH"],
+allowedHeaders: ["Content-Type","Authorization"]
+})); 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
